@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='changelanguage'>
+    <view wx:for="{{languageList}}" wx:key="index" bindtap='activeLang' data-key="{{index}}" class="{{curIndex==index?'active':''}}">{{item.chs}}</view>
+  </view>
+  <view class='input-text'>
+    <text class="iconfont icon-delete" hidden="{{hideClearIcon}}" bindtap='onTapClose'></text>
+    <view class='input-area'>
+      <textarea placeholder='请输入要翻译的文本' placeholder-style='color: #8995a1' bindinput='onInput' bindconfirm='onConfirm' bindblur='onConfirm' value='{{query}}'></textarea>
+    </view>
+    <view class='text-area'>
+      <view class='text-title'>译文</view>
+      <view>
+        <view class='text-resulet' wx:for='{{result}}' wx:key='index'>
+          <text selectable="true">{{item.dst}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+</view>

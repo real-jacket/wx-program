@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/history/history"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4fb99f",
+    "navigationBarTitleText": "轻-翻译",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "position": "top",
+    "borderStyle":"black",
+    "selectedColor":"#ed553b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "翻译"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史"
+      }
+    ]
+  }
+}
